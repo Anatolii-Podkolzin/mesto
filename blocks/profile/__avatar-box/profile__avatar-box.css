@@ -1,5 +1,4 @@
 .profile__avatar-box {
-    position: relative;
-    grid-row: span 2;
-  }
- 
+  position: relative;
+  grid-row: span 2;
+}

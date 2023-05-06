@@ -1,13 +1,13 @@
 .profile__heading {
-    display: flex;
-    align-items: baseline;
-    column-gap: 20px;
-    align-self: end;
+  display: flex;
+  align-items: baseline;
+  align-self: end;
+  column-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile__heading {
+    padding-top: 14px;
+    column-gap: 10px;
   }
-  
-  @media screen and (max-width: 768px) {
-    .profile__heading {
-      padding-top: 14px;
-      column-gap: 10px;
-    }
-  }
+}

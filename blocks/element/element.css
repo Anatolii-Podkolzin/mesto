@@ -1,9 +1,9 @@
 .element {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 10px;
-    max-width: 282px;
-    max-height: 361px;
-  }
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 282px;
+  max-height: 361px;
+}
