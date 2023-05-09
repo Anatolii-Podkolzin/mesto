@@ -1,29 +1,30 @@
 const openPopUp = document.querySelector('.profile__edit-button');
-const PopUp = document.querySelector('.popup');
-const closePopUp = PopUp.querySelector('.popup__close');
-const nameInput = PopUp.querySelector('.popup__input');
-const workInput = PopUp.querySelector('.popup__input_work');
+const popUp = document.querySelector('.popup');
+const closePopUp = popUp.querySelector('.popup__close');
+const nameInput = popUp.querySelector('.popup__input');
+const workInput = popUp.querySelector('.popup__input_type_work');
 const defaultName = document.querySelector('.profile__name');
 const defaultWork = document.querySelector('.profile__work');
 const savePopUp = document.querySelector('.popup__button');
+const formPopUp = document.querySelector('.popup__form');
 
 const PopUpOpened = function () {
-    PopUp.classList.add('popup_opened');
+    popUp.classList.add('popup_opened');
     nameInput.value = defaultName.textContent;
     workInput.value = defaultWork.textContent;
 }
 
 const PopUpClose = function () {
-    PopUp.classList.remove('popup_opened');
+    popUp.classList.remove('popup_opened');
 }
 
 const inputNewValues = function (evt) {
     evt.preventDefault()
-    defaultName.textContent = nameInput.value.substr(0, 24);
-    defaultWork.textContent = workInput.value.substr(0, 30);
+    defaultName.textContent = nameInput.value;
+    defaultWork.textContent = workInput.value;
     PopUpClose();
 }
 
 openPopUp.addEventListener('click', PopUpOpened);
 closePopUp.addEventListener('click', PopUpClose);
-PopUp.addEventListener('submit', inputNewValues);
+formPopUp.addEventListener('submit', inputNewValues);

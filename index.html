@@ -18,7 +18,7 @@
             <section class="profile">
                 <div class="profile__info">
                     <div class="profile__avatar-box">
-                        <img class="profile__avatar" src="./images/image kusto.jpg" alt="Аватар">
+                        <img class="profile__avatar" src="./images/image_kusto.jpg" alt="Аватар">
                     </div>
                     <div class="profile__heading">
                         <h1 class="profile__name">Жак-Ив Кусто</h1>
@@ -30,42 +30,42 @@
             </section>
             <section class="elements">
                 <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="">
+                    <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
                     <div class="element__info">
                         <h2 class="element__title">Карачаевск</h2>
                         <button aria-label="Нравится" type="button" class="element__like-btn"></button>
                     </div>
                 </div>
                 <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1404681-unsplash.jpg" alt="">
+                    <img class="element__image" src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Гора Эльбрус">
                     <div class="element__info">
                         <h2 class="element__title">Гора Эльбрус</h2>
                         <button aria-label="Нравится" type="button" class="element__like-btn"></button>
                     </div>
                 </div>
                 <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1556355-unsplash.jpg" alt="">
+                    <img class="element__image" src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Домбай">
                     <div class="element__info">
                         <h2 class="element__title">Домбай</h2>
                         <button aria-label="Нравится" type="button" class="element__like-btn"></button>
                     </div>
                 </div>
                 <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1404681-unsplash.jpg" alt="">
+                    <img class="element__image" src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Гора Эльбрус">
                     <div class="element__info">
                         <h2 class="element__title">Гора Эльбрус</h2>
                         <button aria-label="Нравится" type="button" class="element__like-btn"></button>
                     </div>
                 </div>
                 <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1556355-unsplash.jpg" alt="">
+                    <img class="element__image" src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Домбай">
                     <div class="element__info">
                         <h2 class="element__title">Домбай</h2>
                         <button aria-label="Нравится" type="button" class="element__like-btn"></button>
                     </div>
                 </div>
                 <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="">
+                    <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаево-Черкесская Республика">
                     <div class="element__info">
                         <h2 class="element__title">Карачаево-Черкесская Республика</h2>
                         <button aria-label="Нравится" type="button" class="element__like-btn"></button>
@@ -80,11 +80,10 @@
             <div class="popup__container">
                 <button aria-label="Закрыть" type="button" class="popup__close"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <form class="popup__form">
+                <form class="popup__form" name="form">
                     <div class="popup__input-container">
-                        <input placeholder="Имя" type="text" value="Жак-Ив Кусто" class="popup__input" />
-                        <input placeholder="Работа" type="text" value="Исследователь океана"
-                            class="popup__input popup__input_work" />
+                        <input placeholder="Имя" type="text" name="name" class="popup__input" />
+                        <input placeholder="Работа" type="text" name="about" class="popup__input popup__input_type_work" />
                     </div>
                     <button type="submit" class="popup__button">Сохранить</button>
                 </form>
