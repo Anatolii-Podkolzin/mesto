@@ -10,7 +10,6 @@
   .profile__info {
     grid-template-columns: minmax(min-content, max-content);
     justify-items: center;
-    padding-top: 10px;
     padding-bottom: 33px;
   }
 }
